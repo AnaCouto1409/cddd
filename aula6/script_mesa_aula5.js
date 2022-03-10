@@ -64,8 +64,69 @@ function alteraTema() {
     }
 }
 function changeTheme(){
-    document.querySelector("body")
+    bodyReference.classList.toggle('dark')
+
+    if( bodyReference.classList.contains('dark')){
+        changeClassButtonReference.innerText +='mudar tema light'
+    }else{
+        changeClassButtonReference.innerText +='mudar tema dark'
+    }
 }
-function changeMode(){
-    document.classList.toggle("dark")
+//vai adicionar 
+bodyReference.innerHTML +='<h1>Sou um titulo</h1>'
+
+
+let posts =[
+    {
+        titulo:'O tigre'
+        texto:'O tigre (Panthera tigris) '
+        imagem:'www.caixatem.org.br'
+    },
+    {
+        titulo:'O leao'
+        texto:'O leão (Panthera leo) é um mamífero carnívoro'
+        imagem:'http:127.0/front-tns.tiger.jpg'
+    },
+    {
+        titulo:'O leopardo'
+        texto:'O leopardo (Panthera pardus) é um mamífero carnívoro'
+        imagem:'http:127.0/front-tns.tiger.jpg'
+    },
+    {
+        titulo:'A pantera negra'
+        texto:'A pantera negra é uma variação escura (melanismo) de várias espécies'
+        imagem:'http:127.0/front-tns.tiger.jpg'
+    },
+    {
+        titulo:'O jaguar'
+        texto:'O jaguar, ou jaguarete (Panthera onca) é um carnívoro felídeos'
+        imagem:'http:127.0/front-tns.tiger.jpg'
+    },
+    {
+        titulo:'O guepardo'
+        texto:'O guepardo, ou chita (Acinonyx jubatus) é um membro atípico da família felina.'
+        imagem:'http:127.0/front-tns.tiger.jpg'
+    },
+    
+]
+let mainContentReference = document.querySelector('mainContent')
+for(let post of posts){
+    mainContentReference.innerHTML+=`
+    <div class ="item">
+    <img src="${post.imagem}">
+    <h2>${post.titulo}</h2>
+    <p>${post.texto}</p>
+    `
 }
+bodyReference.innerHTML+= `<h2>Olá eu sou um lindo ${informacoesUsuario.nome} voce tem ${informacoesUsuario}</h2>`
+
+
+
+
+
+
+
+
+
+
+
