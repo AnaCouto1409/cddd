@@ -1,0 +1,116 @@
+<!--DEUS CUIDA DMEIM
+PROJETO QUE TRABALHA BEM em equipedescrição de prestação de serviço
+prestação de serviço- apresentar o produto
+Bootstrap- framework do Css
+declaramos uma variavel
+existem muitas formas de declarar uma variavel 
+//else if não pode se declarada de novo
+e nem receber um novo valor
+
+var temperatura = 40;
+if(temperatura > 30){
+    let msg= "Ei, vamos à praia?";
+    console.log(msg);
+}
+console.log(msg);
+var msg ="Olá mundo!";
+console.log(msg)  
+o negocio e declarar somente uma variavel
+como boas praticas de programação
+
+
+//forA DA VARIAQVEL POSSO CRIAR OUTRA VAR
+let escopo de bloco
+const escopo de bloco
+variavel var e um escopo global
+
+ele coloca na classe os atributos
+uma classe pode ser utilizada como molde
+para criar varios objetos
+//uma classe pode ser utiizada para criação
+de varios objetos
+
+class Carro {
+    rodas = 4;
+    qtdLitrosTanque = 40;
+    buzinar(){
+        console.log("bi-bi");        
+    }
+    constructor(rodas,capacidadeTanque){
+        this.rodas = rodas;
+        this.qtdlItrosTanque = capacidadeTanque;
+    }
+}
+
+const fusca = new Carro(4,100)
+const gol = new Carro(4,80)
+console.log(fusca)
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="teste.js" defer></script>
+    <title>Tester</title>
+</head>
+<body>
+   <header>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///9+SJx3O5d7QprPv9mgfbVyMZTazeJ0NpXp4e18RZvGs9JzM5R5P5l4PJfw6/Ojgrf18vfe0+W/qcyVba1oGI3p4u5sI4+GVqLk2uluKZH08PbLutanh7qJWqS2nMatkL+yl8OCT5+NYaedebO6o8mXcK+pjLzeTxrFAAAEuUlEQVR4nO2diXbiMAxFiROCMTEQllLKvrT9/z8cUqZYnkJLOZKYE979AMs38RKCFTUaAAAAAAAAAAAAAAAAAAAAAAA1ymwz2hqbnxi3b2ypPQ6NWLMdbbIZa09vYz4qjHcuIdibDS1txjlvil2Htbe/Z2hMJMdpeNQ09pW1x7+j5cyXLjEbHuj6jLXXv6BffL1/AoZJUuxZ+30t5bM/3x9+w8QnPda+X0XPpxe6I2CYOPvE2vsrmKXnR6iQ4UFR+y5uLwuKGB72jpJV4Cf28Rw87FyEyc2GE9qMjy9iOmI1+IF5dLHTfPeatQi3Xu2SNpK97vJoqlvFzb+MBIum1Crw1CyiQHrjdE3GqPMDwUgDOlT9QjBSxCwnglvZh+MZXdJyrfV0Q26hlx45JQ22Fg72CXkYzSWH6JEBGTFWPNoHrbDOpBozYxFWVNNSiNdovIeIKqtbGRbU9F0hXqORONVbSG+iSzTizcIltfKzsGIQpkWh8VqjFRYaoxCugkTUmIid7mmQvimEq3g7DdOuxpPb6rRB+ZVCuDuEDEup0XoU7pyGqcpi2g+GWm+IsmDYVwjXvKthUyEcDAWAITMwFACGzMBQABgyA0MBYMgMDAWAITMwFACGzMBQABgyA0MBYMgMDAWAITMwFACGzMBQABgyA0MBYMgMDAWAITOj0+FLpfOs1NBpJF086xuG45DuWSFcOOypdLw0OmCqcNJ7SqJp5ZM9kZhT8WjDkB2Qa+WwlOG4vh+KRyMZHk482CckpvhEJFNC5STkkXDiU37yL8PlNHPhWIF5OOntlrKhVjRfRi+VjEzExIgehB6SbLlUM8F6TzIRC7nFpuzTvMNcft0OTMlNTGxfYvTMptnC0pROr7fOVPRpWm5qF9mUO7ek82KilFWnt1UciT+9kZoX7kSBkEdyFDTayeO9fz7AwZ5bEht27/CNg17S1TO0a+bWr2NttQxFc5u/Y+CVDOt/Dx9gHtZzLa39flj/Z5qKej+XHvk/fluIJnbW/vfhA/zGf4D3NOSVd03ftT3A+9L6v/Ou//8WD/DfU/3/P6z/f8AwFACGzMBQABgyA0MBYMgMDAWAITMwFACGzMBQABgyA0MBYMgMDAWAITMwFACGzMBQABgyA0MBYMgMDAWAITMwFACGzNTf8B51ZkJ5Io06M6Fynt8ohKtY6YYMF1TlkFlFOEqnUu+J1OxSKtZHDnyqHBbskbprOocTSTnCQiUZKRy6VlnZ6OqdpCoBScVFlUtKBo1SegCZiMobsNoOTFKDCvmZ2KLhxKMdoeWAxQuC90g2mVKRzkNQWg84lVXs0RruuVoJ+QWt6Sy6RbVo5qjS0l1RxuWy92J1ufdRoFyjCOlfOnFt9WK5EqitvloWUWKukU8IIrxFsRPnaWH7SfvGVtsT2oyPU5vTHavBjyRx+Ah7s6G93KhL9RI6P5iZy4oShk4tjexEz19UFDC8g2BVud5f6A6/oXf633Co6BfnbyO7odVMG49oue7ZDvEadrtab7zOMbRnVhxOQ2esVuXoS8xHxWHncgKG7rDLFjut93nfUWab0dbY/MT4ZsNxaMSa7WiTKT6nAQAAAAAAAAAAAAAAAAAAAAD+AOcTQGHc6g9zAAAAAElFTkSuQmCC" alt="repro"width="30%">
+    <br>
+        <ul>
+            <li>Home</li>
+            <li>Leia</li>
+            <li>Saiba mais</li>
+        </ul>
+        <h1>Fazei orações</h1>    
+   </header>
+    <!--body -->
+    <button type="text" id="nome" onclick="botao()"><p>Mais um </p></button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+     Ducimus nemo, dolor placeat aut odit ab laboriosam, rem quo ipsam,<br>
+     reiciendis dicta tempora nostrum minus sit velit quibusdam at illo vitae.</p>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/dquKGNVMf2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--footer-->      
+    <footer>
+        <p>&angsph;Todos os direitos reservados para a minha existencia</p>
+    </footer>
+</body>
+</html>
+
+
+<!--Tratamento de Erros
+Erros: TRATAMENTO- CATCH
+TRY
+try/catch como se fosse if else
+try{
+    mochila.guardar("estojo");
+} catch (erro){
+    console.log("Não foimpossivel guardar na mochila");
+    console.log(erro)
+}
+console.log("Esse codigo será executado mesmo quando ocorre erros");
+
+ o erro acontece quando o numero de balas u numero de crianças e menor que zero
+
+ // não recebe uma função de erro
+
+
+o try não recebe parametro
+
+
+
+
+
+erros 404 504 erros de rquisição so servidor http
+são erros que são inerentes ao navegador
+-->
+
+
+
+
+
+
