@@ -1,0 +1,241 @@
+
+/* Webfont: Lato-Black */@font-face {
+    font-family: 'LatoWebBlack';
+    src: url('../fonts/Lato-Black.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato-Black.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/Lato-Black.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Lato-Bold */@font-face {
+    font-family: 'LatoWebBold';
+    src: url('../fonts/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato-Bold.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/Lato-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Regular */@font-face {
+    font-family: 'LatoWeb';
+    src: url('../fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+body {
+    font-family: 'LatoWeb';
+    background-color: rgba(249, 249, 249, 0.89);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+p {
+    margin-bottom: 8px;
+    color:#7e459b;
+}
+
+h5 {
+    color: #7E459B;
+    padding-bottom: 20px;
+}
+
+a {
+  color: #7E459B;
+  margin: 0;
+  text-decoration: none !important;
+  -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+a:hover {
+    color: #7E459B;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: #7e459b;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        }
+    }
+    
+    .header {
+        width: 400px;
+        padding: 140px 0 50px 0;
+    }
+    @media only screen and (max-width: 414px)  {
+        .header {
+            display: none;
+        }
+    }
+    
+    .header-mobile {
+        display: none;
+    }
+    @media only screen and (max-width: 414px)  {
+        .header-mobile {
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 300px;
+        }
+    }
+    
+    @media only screen and (max-width: 414px)  {
+        .col-extra {
+            display: none !important;
+        }
+    }
+    
+    .header-col>div>h1 {
+        font-family: 'LatoWebBlack';
+        font-size: 90px;
+        padding-top: 140px;
+    }
+    @media only screen and (max-width: 768px)  {
+        .header-col>div>h1 {
+        font-size: 45px;
+        padding-top: 220px;
+        }
+    }
+    @media only screen and (max-width: 414px)  {
+        .header-col>div>h1 {
+        padding-top: 50px;
+        text-align: center;
+        }
+    }
+    .header-col>div>h2 {
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 105px;
+    }
+    @media only screen and (max-width: 768px)  {
+        .header-col>div>h2 {
+        font-size: 18px;
+        line-height: 30px;
+        padding-top: 60px;
+        }
+    }
+    @media only screen and (max-width: 414px)  {
+        .header-col>div>h2 {
+        padding-top: 40px;
+        text-align: center;
+        }
+    }
+    
+    .info-section, 
+    .info-sec-section {
+        padding: 90px 9% 30px 9%;
+    }
+    @media only screen and (max-width: 414px)  {
+        .info-section {
+            padding: 65px 4% 25px 4%;
+            text-align: center;
+        }
+        .info-sec-section {
+            padding: 35px 4% 10px 4%;
+            text-align: center;
+        }
+    }
+    
+    .info-title {
+        font-size: 20px;
+    }
+    @media only screen and (max-width: 414px)  {
+        .info-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+    
+    .icons {
+        width: 130px;
+        padding-top: 20px;
+    }
+    
+    .icons-editores {
+        width: 100px;
+        padding: 30px 0;
+    }
+    
+    .icon-column {
+        margin: 10px 50px 0 50px;
+        width: 200px;
+    }
+    @media only screen and (max-width: 414px)  {
+        .icon-column {
+            margin: 20px 50px 20px 50px;
+            width: 200px;
+        }
+    }
+    
+    .icon-description {
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .icons-footer,
+    .icons-footer>a>i {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    
+    .icon-title {
+        font-family: 'LatoWebBold';
+        font-size: 24px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    .card {
+        width: 260px;
+        margin: 15px;
+        -webkit-box-shadow: 9px 12px 11px -5px rgba(212,212,212,0.55);
+        -moz-box-shadow: 9px 12px 11px -5px rgba(212,212,212,0.55);
+        box-shadow: 9px 12px 11px -5px rgba(212,212,212,0.55);
+    }
+    .card-body {
+        padding: 2.25rem;
+    }
+    .card-text {
+        padding-bottom: 20px;
+    }
+    .card-comeco {
+        width: 360px;
+    }
+    .card-pratica {
+        width: 450px;
+    }
+    .card-pratica>div>a>button {
+        margin-top: 30px;
+    }
+    .space-top {
+        padding-top: 100px;
+    }
+    .title-purple {
+        font-size: 24px;
+        color: #7E459B;
+    }
+    .info-comeco {
+        padding: 0px 9% 50px 9%;
+    }
